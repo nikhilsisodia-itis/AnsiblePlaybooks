@@ -1,0 +1,10 @@
+---
+- name: "First remote playbook."
+  hosts: all
+  
+  tasks:
+  - name: "Check Connectivity."
+    ping:
+
+
+    
