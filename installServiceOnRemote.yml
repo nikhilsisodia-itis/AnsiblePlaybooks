@@ -1,0 +1,15 @@
+---
+- name: "Installing Nginx on a remote device."
+  hosts: all
+
+  tasks:
+  - name: "Install Nginx"
+    apt:
+      name: nginx
+      state: present
+
+  - name: "Start & Enable the service."
+    service:  
+      name: nginx
+      state: started
+      enabled: yes
