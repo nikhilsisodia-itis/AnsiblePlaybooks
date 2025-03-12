@@ -1,0 +1,10 @@
+---
+- name: "Creating a user."
+  hosts: localhost
+
+  tasks:
+  - name: "Create a new user."
+    user:
+      name: bot1
+      password: 0000000
+      state: present
