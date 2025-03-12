@@ -1,0 +1,15 @@
+---
+- name: "Creating a Cron Job."
+  hosts: localhost
+
+  tasks:
+  - name: "Adding cron job(s)."
+    cron:
+      name: "Create a new file."
+      minute: 49
+      hour: 19
+      day: 12
+      month: 3
+      weekday: 3
+      user: "prithss"
+      job: "touch /home/prithss/PrithssSpace/demo2.txt"
