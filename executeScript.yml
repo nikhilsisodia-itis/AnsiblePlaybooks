@@ -1,0 +1,12 @@
+---
+- name: "Execute a Script."
+  hosts: localhost
+
+  tasks: 
+  - name: "Give the permission."
+    file: 
+      path: "./scripts/firstScript.sh"
+      mode: 0777
+
+  - name: "Execute the script."
+    shell: "./scripts/firstScript.sh"
