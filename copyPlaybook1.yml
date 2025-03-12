@@ -1,0 +1,12 @@
+---
+- name: "Copy a file with owner & group specified."
+  hosts: all
+
+  tasks:
+  - name: "Copy a file."
+    copy:
+      src: "/home/prithss/PrithssSpace/PCS_AI/PCS-SRS.txt" 
+      dest: "/tmp/copiedDocs/"
+      owner: "user1"
+      group: "pracitce"
+      mode: 0777
