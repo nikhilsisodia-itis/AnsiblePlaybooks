@@ -1,0 +1,10 @@
+---
+- name: "Create a directory at the specified path."
+  hosts: localhost
+
+  tasks:
+  - name: "Create a directory."
+    file:
+      path: "/home/prithss/PrithssSpace/demo"
+      state: directory
+      mode: u=rwx,g=rwx,o=r
