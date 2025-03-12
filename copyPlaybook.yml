@@ -1,0 +1,9 @@
+---
+- name: "Copy Content Playbook."
+  hosts: localhost
+
+  tasks:
+  - name: "Copy a file."
+    copy:
+      src: "/home/prithss/PrithssSpace/PCS_AI/PCS-SRS.txt"
+      dest: "/home/prithss/PrithssSpace/PCS-SRS_Copy.txt"
