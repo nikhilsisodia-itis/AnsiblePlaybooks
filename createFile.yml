@@ -1,0 +1,9 @@
+---
+- name: "Create a new file."
+  hosts: localhost
+
+  tasks:
+  - name: "Creating a new demo.txt file at the specified path."
+    file:
+      path: "/home/prithss/PrithssSpace/demo.txt"
+      state: touch

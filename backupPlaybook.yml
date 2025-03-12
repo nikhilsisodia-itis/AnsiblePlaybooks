@@ -2,7 +2,7 @@
 - name: "Backup of a file."
   hosts: localhost
 
- tasks:
+  tasks:
   - name: "Copying a file with backup."
     copy: 
       src: "/home/prithss/PrithssSpace/PCS_AI/PCS-SRS.txt"
