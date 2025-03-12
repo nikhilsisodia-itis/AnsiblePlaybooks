@@ -1,0 +1,14 @@
+---
+- name: "Using Environment Variables."
+  hosts: localhost
+
+  tasks:
+  - name: "Use the Environment Variable."
+    shell: echo $Greeting >> ./outputs/output.txt
+    environment:
+      Greeting: "Namaskaram, from the Ansible environment variable."
+
+  - name: "Use another Environment Variable."
+    shell: echo $Greeting1 >> ./outputs/output.txt
+    environment:
+      Greeting1: "Namaste, from the Ansible environment variable."

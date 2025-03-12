@@ -1,0 +1,2 @@
+Namaskaram, from the Ansible environment variable.
+Namaste, from the Ansible environment variable.
