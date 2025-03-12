@@ -1,0 +1,11 @@
+---
+- name: "Backup of a file."
+  hosts: localhost
+
+ tasks:
+  - name: "Copying a file with backup."
+    copy: 
+      src: "/home/prithss/PrithssSpace/PCS_AI/PCS-SRS.txt"
+      dest: "/home/prithss/PrithssSpace/PCS-SRS_Copy.txt"
+      mode: 0777
+      backup: yes
