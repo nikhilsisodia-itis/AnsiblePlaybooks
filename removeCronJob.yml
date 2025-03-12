@@ -1,0 +1,10 @@
+---
+- name: "Remove cron job."
+  hosts: localhost
+
+  tasks:
+  - name: "Remove cron job."
+    cron:
+      name: "Create a new file."
+      state: absent
+      user: "prithss"
