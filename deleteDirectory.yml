@@ -1,0 +1,9 @@
+---
+- name: "Delete the directory at the specified path."
+  hosts: localhost
+  
+  tasks:
+  - name: "Delete a file."
+    file:
+      path: "/home/prithss/PrithssSpace/demo"
+      state: absent
