@@ -1,0 +1,9 @@
+---
+- name: "Start a service."
+  hosts: localhost
+
+  tasks: 
+  - name: "Start the specified service."
+    service:
+      name: "nginx"
+      state: "started"
