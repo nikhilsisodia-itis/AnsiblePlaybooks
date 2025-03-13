@@ -1,0 +1,12 @@
+---
+- name: "Stop the nginx service with sudo privileges"
+  hosts: localhost
+
+  tasks:
+    - name: "Stop the nginx service"
+      service:
+        name: nginx
+        state: stopped
+      become: yes
+      become_user: root
+      become_method: sudo
