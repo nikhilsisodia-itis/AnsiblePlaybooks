@@ -1,0 +1,13 @@
+---
+- name: "Using loops in playbook."
+  hosts: localhost
+  vars:
+    greetings:
+      - Namaskaram
+      - Namaste
+      - Khamma Gani 
+  tasks:
+  - name: "Using loops to print different greetigns."
+    debug:
+      msg: "{{ item }}"
+    loop: "{{ greetings }}"
