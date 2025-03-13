@@ -1,0 +1,9 @@
+---
+- name: "Download a file."
+  hosts: localhost
+
+  tasks:
+  - name: "Download the specified file."
+    get_url:
+      url: "https://www.python.org/ftp/python/3.13.2/Python-3.13.2.tar.xz"
+      dest: "/home/prithss/Downloads"
